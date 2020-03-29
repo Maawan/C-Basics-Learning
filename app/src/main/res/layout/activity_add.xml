@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#424242"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:textColor="#fff"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="6dp"
+        android:textStyle="italic"
+        android:fontFamily="serif"
+        android:text="We made this App for all and we will not be launching any Pro Version of it. "
+        android:id="@+id/heading"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/advertising1"
+        android:layout_below="@+id/heading"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ad_pic"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ad_pic"
+        android:textSize="14dp"
+        android:textColor="#fff"
+        android:id="@+id/textHeading"
+        android:fontFamily="serif"
+        android:text="It took a lot of hardwork and time to arrange all the data in Understandable format.We are planning to timely update the content of this App.So to Survive adds are neccessary to keep everything *Free  "
+        android:layout_marginTop="5dp"
+        android:textStyle="italic"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Thank You for Using Our App"
+        android:layout_below="@id/textHeading"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="#E0E0E0"/>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-5627293645158234/9978832886">
+
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

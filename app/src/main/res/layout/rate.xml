@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/close"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close_black_24dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="7dp"
+        android:elevation="5dp"
+        android:layout_alignParentRight="true"/>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="#B2DFDB"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="108dp"
+                    android:id="@+id/vector"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="108dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/rating_dialog"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rate Us"
+                    android:id="@+id/title"
+                    android:layout_gravity="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enjoying this App .Rate us, so we can provide more awesome content "
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/sub_title"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+                    <Button
+                        android:layout_width="100dp"
+                        android:id="@+id/yes"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="50dp"
+                        android:text="Yes"
+                        android:background="@drawable/btn_2"
+                        android:textStyle="bold"
+                        android:textColor="#fff"/>
+                    <Button
+                        android:layout_width="100dp"
+                        android:id="@+id/no"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_1"
+                        android:text="No"
+                        android:textStyle="bold"
+                        android:textColor="#fff"/>
+
+                </LinearLayout>
+                <Button
+                    android:layout_width="120dp"
+                    android:id="@+id/ask_later"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_1"
+                    android:text="Ask me Later"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#fff"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

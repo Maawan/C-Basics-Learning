@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/rlayout"
+    android:background="#90A4AE"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        card_view:cardElevation="10dp"
+        android:id="@+id/card_view"
+        android:background="?android:attr/selectableItemBackground"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        card_view:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+
+                android:adjustViewBounds="false"
+                android:layout_weight="31"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="1dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/book_learning" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+
+                android:layout_weight="38"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:text="Learn"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:fontFamily="serif"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardElevation="10dp"
+        card_view:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+
+                android:adjustViewBounds="false"
+                android:layout_weight="31"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="1dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/coding_2_high" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+
+                android:layout_weight="38"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:text="Program"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:fontFamily="serif"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view3"
+        android:layout_width="match_parent"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="10dp"
+
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:focusable="true"
+        android:clickable="true"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        card_view:cardElevation="10dp"
+        card_view:cardCornerRadius="4dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+
+                android:adjustViewBounds="false"
+                android:layout_weight="31"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="1dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/headset" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+
+                android:layout_weight="38"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:text="Help"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:fontFamily="serif"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>
+

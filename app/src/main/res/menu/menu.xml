@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/add"
+        android:title="Why Ads ?">
+
+    </item>
+    <item
+        android:id="@+id/Ref"
+        android:title="References">
+
+    </item>
+    <item
+        android:id="@+id/share"
+        android:title="Share this App">
+
+
+    </item>
+    <!--<item-->
+        <!--android:id="@+id/website"-->
+        <!--android:title="Visit our Website">-->
+
+
+    <!--</item>-->
+    <item
+        android:id="@+id/policy"
+        android:title="Privacy Policy">
+
+
+    </item>
+    <item
+        android:id="@+id/about"
+        android:title="Know more about us">
+
+    </item>
+    <item
+        android:id="@+id/app_info"
+        android:title="App Info">
+
+    </item>
+
+
+
+</menu>

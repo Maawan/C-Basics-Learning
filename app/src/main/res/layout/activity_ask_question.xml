@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        card_view:cardElevation="10dp"
+        android:id="@+id/card_view"
+        android:background="?android:attr/selectableItemBackground"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        card_view:cardCornerRadius="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ask a Question"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    android:fontFamily="serif"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/ask"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ask"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal"
+                    android:layout_margin="2dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:src="@drawable/question_5"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_margin="7dp"
+                            android:fontFamily="serif"
+                            android:textStyle="italic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="In order to ask any question from Developer, you need to watch a Video Ad.
+We are not charging  you for anything but with these ads we will be able to run these App."/>
+                    </LinearLayout>
+
+                </LinearLayout>
+               <android.support.v7.widget.CardView
+                   card_view:cardElevation="10dp"
+                   android:clickable="true"
+                   android:focusable="true"
+                   android:background="?android:attr/selectableItemBackground"
+                   android:foreground="?android:attr/selectableItemBackground"
+                   android:id="@+id/card_question"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginBottom="20dp"
+                   card_view:cardCornerRadius="4dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginRight="10dp">
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:background="#F50057">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Ad is Loading..."
+                           android:layout_centerHorizontal="true"
+                           android:textSize="20dp"
+                           android:padding="10dp"
+                           android:gravity="center"
+                           android:textColor="#fff"
+                           android:id="@+id/ad_text"
+                           />
+
+                   </RelativeLayout>
+               </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

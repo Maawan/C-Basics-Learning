@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#424242"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<ScrollView android:layout_width="match_parent"
+    android:layout_marginBottom="50dp"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:textColor="#B0BEC5"
+        android:textStyle="italic|bold"
+        android:id="@+id/title"/>
+    <TextView
+        android:textColor="#B0BEC5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="15dp"
+        android:fontFamily="serif"
+        android:textStyle="italic"
+        tools:text="vjerjv"
+        android:id="@+id/ans"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:id="@+id/image"
+       />
+    <thereisnospon.codeview.CodeView
+        android:id="@+id/codeview"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </thereisnospon.codeview.CodeView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Output :"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:textColor="#B0BEC5"
+        android:id="@+id/out"
+        android:textStyle="italic"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/output"
+        android:textColor="#B0BEC5"
+        android:layout_margin="10dp"
+        android:textSize="15dp"/>
+
+    </LinearLayout>
+    </ScrollView>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-5627293645158234/9978832886"/>
+</RelativeLayout>
